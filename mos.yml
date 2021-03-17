@@ -3,8 +3,6 @@ description: DS18B20 Library
 type: lib
 version: 1.0
 
-platforms: [ esp32 ]
-
 includes: [ include ]
 sources: [ src ]
 
@@ -12,8 +10,6 @@ config_schema:
   - ["ds18b20", "o", {"title":"DS18B20 Settings"}]
   - ["ds18b20.enable", "b", true, {"title": "Enable DS18B20"}]
   - ["ds18b20.pin", "i", 33, {"title": "GPIO to be used"}]
-  - ["ds18b20.rmt_rx", "i", 0, {"title": "RX Channel"}]
-  - ["ds18b20.rmt_tx", "i", 1, {"title": "TX Channel"}]
   - ["ds18b20.poll_period", "i", 5000, {"title": "Temperature Poll Period in mS. Disable with -1"}]
   - ["ds18b20.register_rpc", "b", true, {"title": "Enable RPC methods"}]
 
@@ -21,7 +17,7 @@ tags:
   - hw
   - net
 libs:
-  - origin: https://github.com/mongoose-os-libs/onewire-rmt
+  - origin: https://github.com/mongoose-os-libs/onewire
   - origin: https://github.com/mongoose-os-libs/rpc-common
 
 manifest_version: 2017-09-29
