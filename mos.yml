@@ -17,7 +17,7 @@ tags:
   - hw
   - net
 libs:
-  - origin: https://github.com/mongoose-os-libs/onewire
-  - origin: https://github.com/mongoose-os-libs/rpc-common
+  - location: https://github.com/mongoose-os-libs/onewire
+  - location: https://github.com/mongoose-os-libs/rpc-common
 
 manifest_version: 2017-09-29
